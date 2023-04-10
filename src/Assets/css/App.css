@@ -1,0 +1,303 @@
+:root {
+    --primary: #FF931E;
+    --primary-accent: #D16726;
+    --secondary: #808080;
+    --orange-2: #FFB86A;
+    --white-1: #FFFFFF;
+    --white-2: #FFF4F4;
+    --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --primary-padding: 16px;
+    --primary-gradient: linear-gradient(90deg, #FF931E -27%, #EE7D3D 55.81%, #FFBB70 132%);
+    --secondary-gradient: linear-gradient(90deg, #FF9C30 -27%, #FFAF58 55.81%, #F38D47 132%);
+    --bg-graient: linear-gradient(90deg, #EE7D3D -19.23%, rgba(255, 175, 88, 0.96) 133.15%);
+}
+
+::selection {
+    background: var(--primary);
+}
+
+* {
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100%;
+    background: #fff;
+    color: #000;
+}
+
+
+body, button {
+    text-rendering: optimizeLegibility;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+body, ul, ol, dl {
+    margin: 0;
+}
+
+h1 {
+    color: var(--white-1);
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: clamp(1.25em, 4vw, 3.5em);
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    color: var(--primary);
+}
+
+p {
+    font-weight: 400;
+    font-size: clamp(0.8em, 3vw, 1.25em);
+    line-height: 1.5;
+    color: #000000;
+}
+
+p a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    background: var(--primary-accent);
+}
+
+ol, ul {
+    padding-left: 1em;
+}
+
+#login-dialog {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 4;
+    background-color: #00000050;
+}
+
+#login-dialog form {
+    background-color: var(--white-1);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    padding: 16px 24px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#login-dialog form h3 {
+    padding: 0;
+    margin: 0;
+}
+
+#login-dialog form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#login-dialog form ul li:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#login-dialog form ul li:not(:last-child) label {
+    position: absolute;
+    left: 8px;
+    top: 14px;
+}
+
+#login-dialog form ul li:focus-within label, .filled label {
+    color: var(--primary);
+    left: 4px !important;
+    top: 10px !important;
+    font-size: 0.6em;
+}
+
+#login-dialog form ul li:not(:last-child) input {
+    margin: 8px 0;
+    height: 38px;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 0 4px 4px;
+}
+
+#login-dialog form ul li:focus-within input {
+    margin: 8px 0;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    outline: none;
+}
+
+#login-dialog form ul li:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.btn-cancel {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: none;
+    padding: 8px 16px;
+}
+
+.btn-cancel:hover {
+    color: var(--primary-accent);
+}
+
+.btn-confirm {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: var(--primary);
+    margin-left: 16px;
+}
+
+.btn-confirm:hover {
+    background: var(--primary-accent);
+}
+
+.form-error {
+    color: red;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+.btn-big {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: clamp(0.8em, 3vw, 1.25em);
+    padding: 0 clamp(2em, 5vw, 3em);
+    height: clamp(50px, 10vw, 70px);
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    color: var(--white-2);
+    background: var(--primary-accent);
+    text-transform: uppercase;
+}
+
+.btn-big:hover {
+    background: var(--primary);
+}
+
+.btn-secondary {
+    border: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(0.8em, 3vw, 1.25em);
+    padding: 0 30px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    color: var(--orange-2);
+    background: var(--primary-accent);
+    text-transform: uppercase;
+}
+
+.btn-secondary:not(.coming-soon) {
+    color: var(--white-2);
+    cursor: pointer;
+}
+
+.btn-secondary:not(.coming-soon):hover {
+    background: var(--primary);
+}
+
+section {
+    max-width: 1440px;
+    margin: 35px auto;
+    padding: 50px 120px;
+}
+
+section li {
+    font-size: clamp(0.8em, 3vw, 1.25em);
+}
+
+.more-info {
+    background: var(--primary-gradient);
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    box-shadow: var(--shadow);
+}
+
+.explore-tools {
+    font-weight: 600;
+    font-size: clamp(2em, 5.333vw, 4em);
+    color: var(--white-1);
+    line-height: 1.5;
+    margin: 0 0 16px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+    section {
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section {
+        padding: 50px 80px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        padding: 50px 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 50px 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section {
+        padding: 50px 20px;
+    }
+}

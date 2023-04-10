@@ -1,0 +1,57 @@
+.log-in-dialog {
+    width: 100vw;
+    height: 100vh;
+    background: #00000030;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-card {
+    background-color: white;
+    border-radius: 16px;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    padding: 32px;
+    display: grid;
+    gap: 16px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.log-in-card legend {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.log-in-card .buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.log-in-card label {
+    display: grid;
+}
+
+.log-in-card label input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+
+.log-in-card label input:focus {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}

@@ -1,0 +1,89 @@
+.waiting-list-dialog {
+    width: 100vw;
+    height: 100vh;
+    background: #00000030;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waiting-list-card {
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.waiting-list-content {
+    width: 50%;
+    padding: 64px 32px 32px;
+    display: grid;
+    gap: 16px;
+    background: rgba(237, 237, 237, 0.86);
+    backdrop-filter: blur(2px);
+}
+
+.waiting-list-content h3 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.waiting-list-content p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.waiting-list-content form {
+    display: grid;
+    gap: 8px;
+}
+.waiting-list-content form input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+
+.waiting-list-content form input:focus {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.waiting-list-content .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+
+.success {
+    font-size: 1em;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .waiting-list-content {
+        width: 100%;
+    }
+}

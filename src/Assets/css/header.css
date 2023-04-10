@@ -1,0 +1,49 @@
+#banner {
+    box-shadow: var(--shadow);
+    padding: 100px var(--primary-padding);
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2NkwAS+jGhivgwMDJuRBcECIEUwQbgATBBFACQIALoFBFPSYn6NAAAAAElFTkSuQmCC) repeat;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#banner::after {
+    content: '';
+    background: #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.header-text {
+    margin: 0;
+    font-size: clamp(1em, 2vw, 3em);
+    text-align: center;
+    line-height: 1.2;
+    z-index: 1;
+}
+
+.header-text button {
+    color: var(--white-1);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.header-text button:hover {
+    color: var(--primary-accent);
+}
