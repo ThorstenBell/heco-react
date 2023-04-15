@@ -2,6 +2,7 @@
   "name": "heco-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thorstenbell.github.io/heco-react-ghpages/",
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@mdi/js": "^7.2.96",

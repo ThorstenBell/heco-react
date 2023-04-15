@@ -1,11 +1,12 @@
 #banner {
     box-shadow: var(--shadow);
     padding: 100px var(--primary-padding);
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    background-size: cover;
 }
 
 #banner::before {
@@ -37,13 +38,16 @@
     z-index: 1;
 }
 
-.header-text button {
-    color: var(--white-1);
+#banner button {
+    color: var(--primary);
     background: none;
     border: none;
     outline: none;
+    z-index: 1;
+    position: absolute;
+    bottom: 16px;
 }
 
-.header-text button:hover {
+#banner button:hover {
     color: var(--primary-accent);
 }

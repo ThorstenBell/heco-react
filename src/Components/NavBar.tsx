@@ -107,7 +107,7 @@ const NavBar = ({scroll}: Props) => {
                             type="button"
                             id="btn-login"
                             onClick={() => setShowModal(true)}
-                        >Log in
+                        >Sign in
                         </button>
                     </li>
                     <li>

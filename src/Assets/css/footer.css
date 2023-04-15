@@ -18,14 +18,19 @@ footer {
     font-size: 1em;
 }
 
-.terms li a, .terms li {
+.terms li a, .terms li, .terms li button {
     color: #000000;
     text-decoration: none;
     display: flex;
     align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
 }
 
-.terms li a:hover {
+.terms li a:hover, .terms li button:hover {
     color: var(--primary);
 }
 

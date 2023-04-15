@@ -4,6 +4,7 @@ export interface ITool {
     description: string[];
     link?: string;
     image: string;
+    icon: string;
 }
 
 export interface ITestimonial {

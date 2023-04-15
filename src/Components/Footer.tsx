@@ -1,23 +1,38 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Icon from "@mdi/react";
 import {mdiEmail, mdiLinkedin} from "@mdi/js";
 import '../Assets/css/footer.css'
+import {createPortal} from "react-dom";
+import PolicyDialog from "./PolicyDialog";
 const Footer = () => {
+    const [openPrivacyPolicy, setOpenPrivacyPolicy] = useState(false)
+    const [policyType, setPolicyType] = useState('privacy')
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        if (body) {
+            body.style.overflow = openPrivacyPolicy ? 'hidden' : 'hidden auto';
+        }
+    }, [openPrivacyPolicy])
     return (
         <footer>
             <div className="footer">
                 <ul className="terms">
-                    <li><a download href="downloads/Privacy%20Policy.pdf">Privacy policy</a></li>
-                    <li><a download href="downloads/Terms%20of%20Use.pdf">Terms of use</a></li>
+                    <li><button onClick={() => {
+                        setPolicyType('privacy')
+                        setOpenPrivacyPolicy(true)
+                    }}>Privacy policy</button></li>
+                    <li><button onClick={() => {
+                        setPolicyType('terms')
+                        setOpenPrivacyPolicy(true)
+                    }}>Terms of use</button></li>
                     <li><a href="mailto:info@hecoanalytics.com">
                         <Icon path={mdiEmail} size={1}></Icon>
                         info@hecoanalytics.com</a></li>
                 </ul>
 
                 <div className="copyright">
-                    <p>&copy; HecoAnalytics
-                        <script>document.write(String(new Date().getFullYear()))</script>
-                    </p>
+                    <p>&copy; { String(new Date().getFullYear())} HecoAnalytics</p>
                 </div>
                 <div className="social-media">
                     <p>Follow:</p>
@@ -27,8 +42,7 @@ const Footer = () => {
                     </a>
 
                 </div>
-
-
+                {openPrivacyPolicy && createPortal(<PolicyDialog policyType={policyType} closeDialog={() => setOpenPrivacyPolicy(false)}></PolicyDialog>, document.body)}
             </div>
         </footer>
     )

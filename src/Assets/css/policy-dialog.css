@@ -1,0 +1,30 @@
+.policy-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 3;
+    padding: 32px;
+    height: 100vh;
+    overflow: auto;
+    width: 100vw;
+}
+
+.policy-dialog button {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    border-radius: 100%;
+    height: 36px;
+    width: 36px;
+    border: none;
+    outline: none;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-1);
+}
+.policy-dialog button:hover {
+    background: var(--primary-accent);
+}

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {ITool} from "../Interfaces";
-import '../Assets/css/tool-block.css';
+import '../Assets/css/time-line-block.css';
 import WaitingListDialog from "./WaitingListDialog";
 import {createPortal} from "react-dom";
 
@@ -19,13 +19,15 @@ const ToolBlock = ({tool}: Props) => {
     }, [openDialog])
 
     return (
-        <div className="tool-block">
+        <div className="tool-block" id={tool.name}>
+            <div className='icon'><img src={tool.icon} alt={tool.name}/></div>
             <h3>{tool.name}</h3>
             <p>{tool.short}</p>
-            {!tool.link && <button type='button' className="btn-secondary coming-soon">Coming Soon!</button>}
-            {tool.link && <button type='button' className="btn-secondary"
+            {!tool.link && <button type='button' className="coming-soon">Coming Soon!</button>}
+            {tool.link && <button type='button' className="open-dialog"
                                   onClick={() => setOpenDialog(true)}>Learn More!</button>}
-            {openDialog && createPortal(tool.link && <WaitingListDialog tool={tool} closeDialog={() => setOpenDialog(false)}></WaitingListDialog>, document.body)}
+            {openDialog && createPortal(tool.link && <WaitingListDialog tool={tool}
+                                                                        closeDialog={() => setOpenDialog(false)}></WaitingListDialog>, document.body)}
         </div>
     )
 }

@@ -9,7 +9,7 @@ const LogInDialog = ({onClose}: Props) => {
     return (
         <div className='log-in-dialog'>
             <form className='log-in-card'>
-                <legend>Log In</legend>
+                <legend>Sign In</legend>
                 <label htmlFor="email">
                     Email
                     <input
@@ -35,7 +35,7 @@ const LogInDialog = ({onClose}: Props) => {
                     >Cancel
                     </button>
                     <button type="submit" className='btn-confirm'>
-                        Log In
+                        Sign In
                     </button>
                 </div>
 

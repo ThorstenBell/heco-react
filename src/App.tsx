@@ -7,11 +7,17 @@ import {ITool} from "./Interfaces";
 import ToolBlock from "./Components/ToolBlock";
 import TestimonialSection from "./Components/TestimonialSection";
 import HecoCalc from "./Assets/images/tools/HecoCalc.jpg";
+import HecoCalcIcon from "./Assets/images/icons/HecoCalc.svg";
 import HecoMap from "./Assets/images/tools/HecoMap.jpg";
+import HecoMapIcon from "./Assets/images/icons/HecoMap.svg";
 import HeConnect from "./Assets/images/tools/HeConnect.jpg";
+import HeConnectIcon from "./Assets/images/icons/HeConnect.svg";
 import HecoPath from "./Assets/images/tools/HecoPath.jpg";
+import HecoPathIcon from "./Assets/images/icons/HecoPath.svg";
 import HecoSAILR from "./Assets/images/tools/HecoSAILR.jpg";
+import HecoSAILRIcon from "./Assets/images/icons/HecoSAILR.svg";
 import HecoCost from "./Assets/images/tools/HecoCost.jpg";
+import HecoCostIcon from "./Assets/images/icons/HecoCost.svg";
 
 const App: FC = () => {
     const tools: ITool[] = [
@@ -23,7 +29,8 @@ const App: FC = () => {
                 'If you would like to use HecoMap, enter your details below and we’ll be in touch.'
             ],
             image: HecoMap,
-            link: "xnqyojwj"
+            link: "xnqyojwj",
+            icon: HecoMapIcon
         },
         {
             name: 'HecoSAILR',
@@ -32,7 +39,8 @@ const App: FC = () => {
                 'Our systematic literature review gathers academic and market information about your health intervention. Novel AI approaches extract and organise findings.',
                 'If you would like to use HecoSAILR, enter your details below and we’ll be in touch.'
             ],
-            image: HecoSAILR
+            image: HecoSAILR,
+            icon: HecoSAILRIcon
         },
         {
             name: 'HecoCost',
@@ -41,7 +49,8 @@ const App: FC = () => {
                 'Our on-line budget impact modelling platform facilitates accurate unit and fixed cost capture. We present budget impact models and sensitivity analysis in a dashboard.',
                 'If you would like to use HecoCost, enter your details below and we’ll be in touch.'
             ],
-            image: HecoCost
+            image: HecoCost,
+            icon: HecoCostIcon
         },
         {
             name: 'HecoCalc',
@@ -50,7 +59,8 @@ const App: FC = () => {
                 'Our on-line health economic modelling platform supports cost-effectiveness analysis from an early development stage to later trial presentation. We display cost-effectiveness visuals and sensitivity analysis in a dashboard.',
                 'If you would like to use HecoCalc, enter your details below and we’ll be in touch.'
             ],
-            image: HecoCalc
+            image: HecoCalc,
+            icon: HecoCalcIcon
         },
         {
             name: 'HeConnect',
@@ -59,7 +69,8 @@ const App: FC = () => {
                 'Real-time data is securely sent to our platforms and used to update evidence mapping (HecoMap), budget analysis (HecoCost) or economic models (HecoCalc).',
                 'If you would like to use HeConnect, enter your details below and we’ll be in touch.'
             ],
-            image: HeConnect
+            image: HeConnect,
+            icon: HeConnectIcon
         },
         {
             name: 'HecoPath',
@@ -68,7 +79,8 @@ const App: FC = () => {
                 'Our hybrid AI approach extracts health pathway models from big or small data sets. Pathway models can then adapt models for newly identified patient groups or pathway elements.',
                 'If you would like to use HecoPath, enter your details below and we’ll be in touch.'
             ],
-            image: HecoPath
+            image: HecoPath,
+            icon: HecoPathIcon
         }
     ]
 
@@ -87,28 +99,23 @@ const App: FC = () => {
             <section id="need">
                 <h2>Why is HecoAnalytics needed?</h2>
                 <p>HecoAnalytics provides health economic tools and solutions, within a business context, to enable
-                    companies to
-                    engage early and affordably with health economics enabling them to develop better, more effective
-                    products
-                    designed to meet commissioners’ and healthcare systems’ needs. The output of HecoAnalytics tools are
-                    aligned
-                    with the requirements of the National Institute of Care and Health Excellence (NICE) technology
-                    assessment (HTA)
-                    programmes such as, the Medical Technologies Evaluation Programme (MTEP) to demonstrate the value of
-                    a company’s
-                    product to NICE but also other HTA bodies and payers. Our mission is to provide companies with
-                    appropriate,
-                    understandable and actionable health economic support that will assist the company in marketing its
-                    products and
+                    companies to engage early and affordably with health economics enabling them to develop better, more
+                    effective products designed to meet commissioners’ and healthcare systems’ needs. The output of
+                    HecoAnalytics tools are aligned with the requirements of the National Institute of Care and Health
+                    Excellence (NICE) technology assessment (HTA) programmes such as, the Medical Technologies
+                    Evaluation Programme (MTEP) to demonstrate the value of a company’s product to NICE but also other
+                    HTA bodies and payers. Our mission is to provide companies with appropiate, understandable and
+                    actionable health economic support that will assist the company in marketing its products and
                     interacting with HTA agencies in a number of geographies. HecoAnalytics facilitation sessions offer
-                    extensive
-                    interaction with experienced staff to ensure that clients gain maximum value from the process,
-                    delivering
-                    actionable, user-friendly output rather than simply providing academic reports. Furthermore, the
-                    integrated
-                    nature of HecoAnalytics deliverables means that previous work can informed future work and models
-                    and ideas can
-                    be easily and efficiently updated as new information is generated.
+                    extensive interaction with experienced staff to ensure that clients gain maximum value from the
+                    process, delivering actionable, user friendly output rather than simply providing academic reports.
+                    Furthermore, the integrated nature of HecoAnalytics deliverables means that previous work can
+                    informed future work and models and ideas can be easily and efficiently updated as new information
+                    is generated.
+
+                    HecoAnalytics uses the accepted practice of evaluating the cost-effectiveness of a new technology in
+                    comparison to an existing gold standard technology, similar to that used by NICE (The National
+                    Institute for Health and Care Excellence).
                 </p>
                 <p>HecoAnalytics uses the accepted practice of evaluating the cost-effectiveness of a new technology in
                     comparison
@@ -117,10 +124,10 @@ const App: FC = () => {
             </section>
             <section id="tools">
                 <h2>Our tools</h2>
-                <p>We provide developers and manufacturers of near-patient products and services with a simple to use
-                    economic
-                    pricing and scenario analysis tool that utilises state-of-the-art cloud, big data and semantic
-                    technologies.</p>
+                <p>We provide Medtech companies with a set of Web-based tools that support their evidence gathering and
+                    economic modelling journey. Our HecoAnalytics approach can be used to benefit medical devices and
+                    software, including AI, by creating actionable evidence from literature and scenario-based modeling
+                    tools.</p>
                 <div className="tool-blocks">
                     {tools.map((tool: ITool, key: number) => {
                         return <ToolBlock key={key} tool={tool}></ToolBlock>
@@ -207,6 +214,7 @@ const App: FC = () => {
 
             <section>
                 <div className="more-info">
+                    <p className='tag-line'>INTERESTED IN HECOANALYTICS?</p>
                     <p className="explore-tools">Explore our tools</p>
                     <div className="actions">
                         <button type='button' onClick={() => scroll('tools')} className="btn-big">Get Started</button>

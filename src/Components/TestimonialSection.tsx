@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Icon from '@mdi/react';
-import {mdiChevronLeft, mdiChevronRight, mdiCircle, mdiCircleOutline, mdiFormatQuoteOpen} from '@mdi/js';
+import {mdiChevronLeft, mdiChevronRight, mdiCircle, mdiFormatQuoteOpen} from '@mdi/js';
 import {ITestimonial} from "../Interfaces";
 import '../Assets/css/testimonial-section.css';
 
@@ -62,9 +62,9 @@ const TestimonialSection = () => {
                 <div id="testimonial-name">{activeTestimonial.name}</div>
                 <div id="testimonial-indicators">{testimonials.map((testimonial: ITestimonial, key: number) => {
                     if (key === testimonialIndex) {
-                        return <button className='active' title={testimonial.name} key={key} type='button'><Icon path={mdiCircle} size={1}></Icon></button>
+                        return <button className='active' title={testimonial.name} key={key} type='button'><Icon path={mdiCircle} size={0.5}></Icon></button>
                     }
-                    return <button title={testimonial.name} key={key} type='button' onClick={() => handleClick(key)}><Icon path={mdiCircleOutline} size={1}></Icon>
+                    return <button title={testimonial.name} key={key} type='button' onClick={() => handleClick(key)}><Icon path={mdiCircle} size={0.5}></Icon>
                     </button>
                 })}</div>
             </div>

@@ -10,6 +10,7 @@
     --primary-gradient: linear-gradient(90deg, #FF931E -27%, #EE7D3D 55.81%, #FFBB70 132%);
     --secondary-gradient: linear-gradient(90deg, #FF9C30 -27%, #FFAF58 55.81%, #F38D47 132%);
     --bg-graient: linear-gradient(90deg, #EE7D3D -19.23%, rgba(255, 175, 88, 0.96) 133.15%);
+    --error: #E50000;
 }
 
 ::selection {
@@ -34,7 +35,7 @@ html, body {
 
 body, button {
     text-rendering: optimizeLegibility;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-size: 1em;
     line-height: 1.5;
 }
@@ -46,16 +47,25 @@ body, ul, ol, dl {
 
 h1 {
     color: var(--white-1);
-    font-weight: 300;
+    font-weight: 600;
+    font-size: clamp(2em, 5vw, 3.5em);
+    background: linear-gradient(93.8deg, #FF931E 0.36%, rgba(255, 175, 88, 0.96) 55.29%, #EE7D3D 109.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 h2 {
     font-weight: 600;
-    font-size: clamp(1.25em, 4vw, 3.5em);
+    font-size: clamp(2em, 5vw, 3.5em);
     line-height: 1;
     text-align: center;
     margin: 0;
     color: var(--primary);
+}
+
+h3 {
+    font-weight: 500;
 }
 
 p {
@@ -63,21 +73,42 @@ p {
     font-size: clamp(0.8em, 3vw, 1.25em);
     line-height: 1.5;
     color: #000000;
-}
-
-p a {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-p a:hover {
-    background: var(--primary-accent);
+    margin: 2em 0;
 }
 
 ol, ul {
     padding-left: 1em;
 }
+
+label {
+    display: grid;
+}
+
+label input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+
+label input:focus {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+label input:invalid {
+    color: var(--error);
+    border-bottom: 1px solid var(--error);
+}
+
+label:has(input:focus) {
+    color: var(--primary);
+}
+
+label:has(input:invalid) {
+    color: var(--error);
+}
+
 
 #login-dialog {
     display: none;
@@ -137,7 +168,6 @@ ol, ul {
     height: 38px;
     border: 1px solid var(--secondary);
     border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
     padding: 16px 0 4px 4px;
 }
 
@@ -210,32 +240,6 @@ ol, ul {
 }
 
 .btn-big:hover {
-    background: var(--primary);
-}
-
-.btn-secondary {
-    border: none;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: clamp(0.8em, 3vw, 1.25em);
-    padding: 0 30px;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    color: var(--orange-2);
-    background: var(--primary-accent);
-    text-transform: uppercase;
-}
-
-.btn-secondary:not(.coming-soon) {
-    color: var(--white-2);
-    cursor: pointer;
-}
-
-.btn-secondary:not(.coming-soon):hover {
     background: var(--primary);
 }
 

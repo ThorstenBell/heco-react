@@ -29,8 +29,8 @@ const Header = ({scroll}:Props) => {
         <header id="banner" style={headerBg}>
             <div className="header-text">
                 <h1>Analytics Software for<br/>Evidence based Healthcare</h1>
-                <button type='button' title="Read more!" onClick={() => scroll('tools')}><Icon path={mdiChevronDown} size={2}></Icon></button>
             </div>
+            <button type='button' title="Read more!" onClick={() => scroll('tools')}><Icon path={mdiChevronDown} size={2}></Icon></button>
         </header>
     )
 }

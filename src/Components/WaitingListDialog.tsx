@@ -27,12 +27,11 @@ const WaitingListDialog = ({tool, closeDialog}: Props) => {
                     {!state.succeeded && <form onSubmit={handleSubmit}>
                         <label htmlFor="name">
                             Full name
-                        </label>
-                        <input
-                            id="name"
-                            type="text"
-                            name="name"
-                        />
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                            /></label>
                         <ValidationError
                             prefix="Name"
                             field="name"
@@ -40,12 +39,12 @@ const WaitingListDialog = ({tool, closeDialog}: Props) => {
                         />
                         <label htmlFor="email">
                             Email Address
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                            />
                         </label>
-                        <input
-                            id="email"
-                            type="email"
-                            name="email"
-                        />
                         <ValidationError
                             prefix="Email"
                             field="email"

@@ -29,14 +29,13 @@
     width: 50%;
     padding: 64px 32px 32px;
     display: grid;
-    gap: 16px;
+    gap: 32px;
     background: rgba(237, 237, 237, 0.86);
     backdrop-filter: blur(2px);
 }
 
 .waiting-list-content h3 {
     color: #000000;
-    font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
@@ -46,7 +45,6 @@
 
 .waiting-list-content p {
     color: #000000;
-    font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     margin: 0;
@@ -56,17 +54,6 @@
 .waiting-list-content form {
     display: grid;
     gap: 8px;
-}
-.waiting-list-content form input {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none;
-}
-
-.waiting-list-content form input:focus {
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
 }
 
 .waiting-list-content .buttons {

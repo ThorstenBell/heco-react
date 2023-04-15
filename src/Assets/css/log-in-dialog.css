@@ -20,9 +20,9 @@
     background-size: cover;
     overflow: hidden;
     box-shadow: var(--shadow);
-    padding: 32px;
+    padding: 50px 50px 32px;
     display: grid;
-    gap: 16px;
+    gap: 60px;
     max-width: 500px;
     width: 100%;
 }
@@ -38,20 +38,4 @@
 .log-in-card .buttons {
     display: flex;
     justify-content: flex-end;
-}
-
-.log-in-card label {
-    display: grid;
-}
-
-.log-in-card label input {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none;
-}
-
-.log-in-card label input:focus {
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
 }
