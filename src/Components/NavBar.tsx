@@ -1,23 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import logo from "../logo.svg"
 import '../Assets/css/nav-bar.css';
-import LogInDialog from "./LogInDialog";
-import {createPortal} from "react-dom";
 
 interface Props {
     scroll(id: string): void;
 }
 
 const NavBar = ({scroll}: Props) => {
-    const [showModal, setShowModal] = useState<boolean>(false)
     const [navStyle, setNavStyle] = useState({display: 'none'});
 
-    useEffect(() => {
-        const body = document.querySelector('body');
-        if (body) {
-            body.style.overflow = showModal ? 'hidden' : 'hidden auto';
-        }
-    }, [showModal])
     const hamburger = () => {
         if (navStyle.display === 'flex') {
             setNavStyle({display: 'none'})
@@ -94,28 +85,28 @@ const NavBar = ({scroll}: Props) => {
                         </button>
                     </li>
                     <li>
-                        <button className="btn-nav" type='button' name='services'
+                        <button className="btn-nav" type='button' name='platform'
                                 onClick={() => {
-                                    scroll('services');
+                                    scroll('platform');
                                     close()
-                                }}>Services
+                                }}>Platform
                         </button>
                     </li>
                     <li>
-                        <button
+                        <a
+                            href="https://d1ffpk7jxmleld.cloudfront.net/"
+                            target="_blank" rel="noreferrer"
                             className="btn-nav"
                             type="button"
                             id="btn-login"
-                            onClick={() => setShowModal(true)}
                         >Sign in
-                        </button>
+                        </a>
                     </li>
                     <li>
                         <a className="btn-nav join" href="https://www.linkedin.com/groups/8431494/"
                            target="_blank" rel="noreferrer">Join</a>
                     </li>
                 </ul>
-                {showModal && createPortal(<LogInDialog onClose={() => setShowModal(false)}/>, document.body)}
             </div>
         </nav>
     )

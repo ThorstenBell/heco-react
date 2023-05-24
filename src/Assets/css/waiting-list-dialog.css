@@ -1,7 +1,7 @@
 .waiting-list-dialog {
     width: 100vw;
     height: 100vh;
-    background: #00000030;
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(4px);
     position: fixed;
     top: 0;
@@ -15,6 +15,8 @@
 }
 
 .waiting-list-card {
+    max-width: 1200px;
+    max-height: 100%;
     background-color: white;
     border-radius: 16px;
     display: flex;
@@ -31,7 +33,9 @@
     display: grid;
     gap: 32px;
     background: rgba(237, 237, 237, 0.86);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px rgba(0, 0, 0, 0.8));
+    max-height: 100%;
+    overflow: hidden auto !important;
 }
 
 .waiting-list-content h3 {
@@ -45,8 +49,6 @@
 
 .waiting-list-content p {
     color: #000000;
-    font-size: 20px;
-    line-height: 25px;
     margin: 0;
     padding: 0;
 }

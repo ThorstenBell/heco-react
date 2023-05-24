@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Icon from '@mdi/react';
-import {mdiChevronLeft, mdiChevronRight, mdiCircle, mdiFormatQuoteOpen} from '@mdi/js';
+import quoteMark from '../Assets/images/icons/QuoteMark.svg';
+import {mdiChevronLeft, mdiChevronRight, mdiCircle} from '@mdi/js';
 import {ITestimonial} from "../Interfaces";
 import '../Assets/css/testimonial-section.css';
 
@@ -57,7 +58,7 @@ const TestimonialSection = () => {
                     </button>
                 </div>
                 <div className="tag-line">from HecoAnalytics users</div>
-                <Icon path={mdiFormatQuoteOpen} size={3} color='white'/>
+                <img src={quoteMark} alt="" className="quote-mark" />
                 <div id="testimonial-text">{activeTestimonial.testimonial}</div>
                 <div id="testimonial-name">{activeTestimonial.name}</div>
                 <div id="testimonial-indicators">{testimonials.map((testimonial: ITestimonial, key: number) => {

@@ -23,6 +23,11 @@
     margin: 10px 0 24px;
 }
 
+.quote-mark {
+    width: 80px;
+    margin: 50px;
+}
+
 #testimonial-text {
     font-weight: 600;
     font-size: 28px;
@@ -30,7 +35,7 @@
     color: var(--white-1);
     position: relative;
     margin-bottom: 24px;
-    padding: 0 24px;
+    padding: 0 32px;
 }
 
 #testimonial-name {
@@ -71,6 +76,7 @@
     border: none;
     outline: none;
     color: #CC7947;
+    cursor: pointer;
 }
 
 #testimonial-indicators button.active {
@@ -85,6 +91,11 @@
     #testimonial-name {
         font-size: 20px;
     }
+
+    .quote-mark {
+        width: 80px;
+        margin: 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -98,6 +109,11 @@
 
     #testimonial-name {
         font-size: 18px;
+    }
+
+    .quote-mark {
+        width: 80px;
+        margin: 30px;
     }
 }
 
@@ -122,5 +138,10 @@
 
     #testimonial-indicators {
         top: 50px;
+    }
+
+    .quote-mark {
+        width: 80px;
+        margin: 20px;
     }
 }

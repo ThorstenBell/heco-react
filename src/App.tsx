@@ -29,8 +29,8 @@ const App: FC = () => {
                 'If you would like to use HecoMap, enter your details below and we’ll be in touch.'
             ],
             image: HecoMap,
-            link: "xnqyojwj",
-            icon: HecoMapIcon
+            icon: HecoMapIcon,
+            link: "xeqwlbre"
         },
         {
             name: 'HecoSAILR',
@@ -40,7 +40,8 @@ const App: FC = () => {
                 'If you would like to use HecoSAILR, enter your details below and we’ll be in touch.'
             ],
             image: HecoSAILR,
-            icon: HecoSAILRIcon
+            icon: HecoSAILRIcon,
+            link: "xyyadqny"
         },
         {
             name: 'HecoCost',
@@ -60,7 +61,8 @@ const App: FC = () => {
                 'If you would like to use HecoCalc, enter your details below and we’ll be in touch.'
             ],
             image: HecoCalc,
-            icon: HecoCalcIcon
+            icon: HecoCalcIcon,
+            link: "mayzdgdg"
         },
         {
             name: 'HeConnect',
@@ -70,7 +72,8 @@ const App: FC = () => {
                 'If you would like to use HeConnect, enter your details below and we’ll be in touch.'
             ],
             image: HeConnect,
-            icon: HeConnectIcon
+            icon: HeConnectIcon,
+            link: "xlekwypr"
         },
         {
             name: 'HecoPath',
@@ -80,7 +83,8 @@ const App: FC = () => {
                 'If you would like to use HecoPath, enter your details below and we’ll be in touch.'
             ],
             image: HecoPath,
-            icon: HecoPathIcon
+            icon: HecoPathIcon,
+            link: "xpzejgyr"
         }
     ]
 
@@ -111,15 +115,13 @@ const App: FC = () => {
                     process, delivering actionable, user friendly output rather than simply providing academic reports.
                     Furthermore, the integrated nature of HecoAnalytics deliverables means that previous work can
                     informed future work and models and ideas can be easily and efficiently updated as new information
-                    is generated.
-
+                    is generated.</p>
+                <p>
                     HecoAnalytics uses the accepted practice of evaluating the cost-effectiveness of a new technology in
-                    comparison to an existing gold standard technology, similar to that used by NICE (The National
-                    Institute for Health and Care Excellence).
-                </p>
-                <p>HecoAnalytics uses the accepted practice of evaluating the cost-effectiveness of a new technology in
-                    comparison
-                    to an existing gold standard technology, similar to that used by NICE.
+                    comparison to an existing gold standard technology, similar to that used by <a
+                    href="https://www.nice.org.uk/" rel="noreferrer" target="_blank" title="The National Institute for
+                    Health and Care Excellence">NICE</a> (The National Institute for
+                    Health and Care Excellence).
                 </p>
             </section>
             <section id="tools">
@@ -139,75 +141,26 @@ const App: FC = () => {
                 <h2>How the HecoAnalytics platform works</h2>
                 <p>HecoAnalytics builds on over a decade of academic research in Health Economics and Computer Science.
                     HecoAnalytics uses the latest computing technology such as machine learning (ML), artificial
-                    Intelligence (AI)
-                    and other data science techniques to streamline health economic processes and models. In addition to
-                    our own
-                    staff, the company leverages a network of world-leading academic health economists so that
-                    appropriate domain
-                    expertise can be brought to bear on clients’ projects in a cost-effective manner. HecoAnalytics is
-                    also a
-                    licensed facilitator for the NICE META Tool, an online evidence gap analysis tool.
+                    Intelligence (AI) and other data science techniques to streamline health economic processes and
+                    models. In addition to our own staff, the company leverages a network of world-leading academic
+                    health economists so that appropriate domain expertise can be brought to bear on clients’ projects
+                    in a cost-effective manner. HecoAnalytics is also a licensed facilitator for the NICE META Tool, an
+                    online evidence gap analysis tool.
                 </p>
-            </section>
-            <section id="services">
-                <h2>What you can do with HecoAnalytics</h2>
-                <p>HecoAnalytics is able to provide all services associated with health economic evidence generation and
-                    support of
-                    market access and HTA activities. The typical process of projects that HecoAnalytics undertakes for
-                    companies
-                    includes:</p>
+
+                <p>HecoAnalytics provides a unique set of data-driven health evidence services:</p>
                 <ol>
-                    <li>NICE Medtech Early Technical Assessment (META) Tool - an affordable, online, platform developed
-                        by NICE to
-                        help product developers understand what evidence is needed to make a convincing case to payers
-                        and
-                        commissioners for their technology. It is delivered by HecoAnalytics under licence to NICE as a
-                        Facilitating Organisation.
+                    <li>Early evaluation and scoping as a licensed facilitation organisation for the NICE MedTech Early
+                        Assessment (META) Tool – building an Evidence Map with PICO analysis.
                     </li>
-                    <li>Value Proposition (VP) Development – a clear argument to support commissioning of the product
-                        backed by
-                        measurable data and a robust evidence base. A principal objective to understand where the
-                        product will fall
-                        within the cost-effectiveness plane compared to the current Standard of Care (SoC).
+                    <li>Systematic Literature reviews can then be used to better understand competitor offerings and
+                        pathway impact, augmenting the Evidence Map.
                     </li>
-                    <li>Early Health Economic Modelling (EEM) - an exercise to gain an appreciation of the possible
-                        cost-effectiveness of proposed interventions. EEM is employed to evaluate the potential
-                        cost-effectiveness
-                        related to different product performance characteristics, potential pricing of the product or
-                        results of
-                        clinical trials. Often this can be the first supporting evidence that a product, or
-                        intervention, has
-                        clinical and commercial potential.
+                    <li>Early health economic models using HecoCalc provide a scenario-based approach to analysing
+                        health and cost effectiveness. Budget impact and more detail health economic modelling and
+                        simulation can follow.
                     </li>
-                    <li>Budget Impact (BI) Model development - A budget impact analysis is an economic assessment that
-                        estimates the
-                        financial consequences of adopting a new intervention for a specific budget holder resulting
-                        from a decision
-                        to reimburse a new healthcare intervention. A budget impact analysis evaluates whether the
-                        intervention is
-                        affordable for a budget holder.
-                    </li>
-                    <li>Cost Effectiveness (CE) Model development - A cost-effectiveness analysis evaluates whether an
-                        intervention
-                        offers value relative to an existing intervention, usually the Standard of Care (SoC), the
-                        outcomes are
-                        defined as cost relative to specified health outcomes. A cost-effectiveness analysis evaluates
-                        whether an
-                        intervention represents value for money compared to comparable interventions.
-                    </li>
-                    <li>Development of real time data collection and economic analysis – HeConnect. HecoAnalytics can
-                        assist in data
-                        integration from a Digital Health Technology (DHT) or app into health economic models (including
-                        real time).
-                        Consequently, facilitating significant improvements in the quality and quantity of data that are
-                        collected
-                        and the speed at which economic models can be produced that can be updated with new data as they
-                        become
-                        available.
-                    </li>
-                    <li>Development of AI and machine learning for analysing trial, public and private health data.
-                        Findings are
-                        able to target products or patient groups in order to improve health economic models.
+                    <li>Data collection (HeConnect) and AI tools (HecoPath) can be used to refine models with more detailed pathway representations and patient groupings.
                     </li>
                 </ol>
             </section>

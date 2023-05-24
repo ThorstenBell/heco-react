@@ -2,6 +2,7 @@ import React from "react";
 import '../Assets/css/waiting-list-dialog.css'
 import {ITool} from "../Interfaces";
 import {useForm, ValidationError} from '@formspree/react';
+import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
 
 interface Props {
     tool: ITool;
@@ -9,7 +10,11 @@ interface Props {
 }
 
 const WaitingListDialog = ({tool, closeDialog}: Props) => {
-    const [state, handleSubmit] = useForm(tool.link || "");
+    const {executeRecaptcha} = useGoogleReCaptcha();
+
+    const [state, handleSubmit] = useForm(tool.link || "", {
+        data: {"g-recaptcha-response": executeRecaptcha}
+    });
     const backgroundImg: { backgroundImage: string } = {
         backgroundImage: `url(${tool.image})`,
     };

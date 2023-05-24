@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from "react";
 import Icon from "@mdi/react";
-import {mdiEmail, mdiLinkedin} from "@mdi/js";
+import betterFutures from "../Assets/images/betterfutures.png";
+import {mdiLinkedin} from "@mdi/js";
 import '../Assets/css/footer.css'
 import {createPortal} from "react-dom";
 import PolicyDialog from "./PolicyDialog";
+
 const Footer = () => {
     const [openPrivacyPolicy, setOpenPrivacyPolicy] = useState(false)
     const [policyType, setPolicyType] = useState('privacy')
@@ -18,31 +20,40 @@ const Footer = () => {
         <footer>
             <div className="footer">
                 <ul className="terms">
-                    <li><button onClick={() => {
-                        setPolicyType('privacy')
-                        setOpenPrivacyPolicy(true)
-                    }}>Privacy policy</button></li>
-                    <li><button onClick={() => {
-                        setPolicyType('terms')
-                        setOpenPrivacyPolicy(true)
-                    }}>Terms of use</button></li>
-                    <li><a href="mailto:info@hecoanalytics.com">
-                        <Icon path={mdiEmail} size={1}></Icon>
+                    <li>
+                        <button onClick={() => {
+                            setPolicyType('privacy')
+                            setOpenPrivacyPolicy(true)
+                        }} type="button">Privacy policy
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={() => {
+                            setPolicyType('terms')
+                            setOpenPrivacyPolicy(true)
+                        }} type="button">Terms of use
+                        </button>
+                    </li>
+                    <li>Company Number: 09795243</li>
+                    <li>Contact: <a href="mailto:info@hecoanalytics.com">
                         info@hecoanalytics.com</a></li>
                 </ul>
 
                 <div className="copyright">
-                    <p>&copy; { String(new Date().getFullYear())} HecoAnalytics</p>
+                    <p>&copy; {String(new Date().getFullYear())} HecoAnalytics</p>
                 </div>
                 <div className="social-media">
                     <p>Follow:</p>
-                    <a href="https://www.linkedin.com/company/hecoanalytics-limited/" target="_blank" rel="noreferrer"
-                       title="Follow us on LinkedIn">
-                        <Icon path={mdiLinkedin} size={1}></Icon>
-                    </a>
-
+                    <div className="social-media-images">
+                        <img src={betterFutures} alt="" width="145" height="70"/>
+                        <a href="https://www.linkedin.com/company/hecoanalytics-limited/" target="_blank" rel="noreferrer"
+                           title="Follow us on LinkedIn">
+                            <Icon path={mdiLinkedin} size={2}></Icon>
+                        </a>
+                    </div>
                 </div>
-                {openPrivacyPolicy && createPortal(<PolicyDialog policyType={policyType} closeDialog={() => setOpenPrivacyPolicy(false)}></PolicyDialog>, document.body)}
+                {openPrivacyPolicy && createPortal(<PolicyDialog policyType={policyType}
+                                                                 closeDialog={() => setOpenPrivacyPolicy(false)}></PolicyDialog>, document.body)}
             </div>
         </footer>
     )

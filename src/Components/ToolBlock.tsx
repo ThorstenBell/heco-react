@@ -3,6 +3,7 @@ import {ITool} from "../Interfaces";
 import '../Assets/css/time-line-block.css';
 import WaitingListDialog from "./WaitingListDialog";
 import {createPortal} from "react-dom";
+import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 
 interface Props {
     tool: ITool;
@@ -26,8 +27,12 @@ const ToolBlock = ({tool}: Props) => {
             {!tool.link && <button type='button' className="coming-soon">Coming Soon!</button>}
             {tool.link && <button type='button' className="open-dialog"
                                   onClick={() => setOpenDialog(true)}>Learn More!</button>}
-            {openDialog && createPortal(tool.link && <WaitingListDialog tool={tool}
-                                                                        closeDialog={() => setOpenDialog(false)}></WaitingListDialog>, document.body)}
+            {openDialog && createPortal(tool.link &&
+                <GoogleReCaptchaProvider reCaptchaKey="6LcsApQlAAAAAMBOSivImGYWrfp7xJzFOcAfpwPZ">
+                    <WaitingListDialog tool={tool} closeDialog={() => setOpenDialog(false)}></WaitingListDialog>
+                </GoogleReCaptchaProvider>, document.body)}
+
+
         </div>
     )
 }

@@ -7,11 +7,10 @@
     content: '';
     position: absolute;
     width: 0;
-    border-left: 2px dashed black;
+    border-left: 1px solid black;
     top: 50px;
     bottom: 150px;
     left: 50%;
-    margin-left: -1px;
 }
 
 .tool-block {
@@ -25,9 +24,11 @@
 
 .tool-block:after {
     content: "";
-    width: 14px;
-    height: 14px;
-    background: black;
+    width: 9px;
+    height: 9px;
+    background: var(--primary);
+    border: 2px solid white;
+    outline: 1px solid black;
     display: block;
     position: absolute;
     border-radius: 100%;
@@ -41,7 +42,7 @@
 }
 
 .tool-block:nth-child(even):after {
-    left: -7px;
+    left: -6px;
     right: auto;
 }
 
@@ -60,6 +61,7 @@
 }
 
 .open-dialog, .coming-soon {
+    font-weight: 600;
     background: none;
     border: none;
     outline: none;

@@ -35,7 +35,7 @@ html, body {
 
 body, button {
     text-rendering: optimizeLegibility;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 1em;
     line-height: 1.5;
 }
@@ -76,8 +76,39 @@ p {
     margin: 2em 0;
 }
 
+p a {
+    color: inherit;
+}
+
 ol, ul {
-    padding-left: 1em;
+    padding-left: 0;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+ol li {
+    counter-increment: item;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+    margin-bottom: 68px;
+}
+
+ol li:before {
+    content: counter(item);
+    background: white;
+    width: 56px;
+    height: 56px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
 }
 
 label {
@@ -107,81 +138,6 @@ label:has(input:focus) {
 
 label:has(input:invalid) {
     color: var(--error);
-}
-
-
-#login-dialog {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    padding: 16px;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    z-index: 4;
-    background-color: #00000050;
-}
-
-#login-dialog form {
-    background-color: var(--white-1);
-    border-radius: 4px;
-    box-shadow: var(--shadow);
-    padding: 16px 24px;
-    max-width: 400px;
-    width: 100%;
-}
-
-#login-dialog form h3 {
-    padding: 0;
-    margin: 0;
-}
-
-#login-dialog form ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#login-dialog form ul li:not(:last-child) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-#login-dialog form ul li:not(:last-child) label {
-    position: absolute;
-    left: 8px;
-    top: 14px;
-}
-
-#login-dialog form ul li:focus-within label, .filled label {
-    color: var(--primary);
-    left: 4px !important;
-    top: 10px !important;
-    font-size: 0.6em;
-}
-
-#login-dialog form ul li:not(:last-child) input {
-    margin: 8px 0;
-    height: 38px;
-    border: 1px solid var(--secondary);
-    border-radius: 4px;
-    padding: 16px 0 4px 4px;
-}
-
-#login-dialog form ul li:focus-within input {
-    margin: 8px 0;
-    border: 1px solid var(--primary);
-    border-radius: 4px;
-    outline: none;
-}
-
-#login-dialog form ul li:last-child {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 16px;
 }
 
 .btn-cancel {
@@ -303,5 +259,12 @@ section li {
 @media screen and (max-width: 576px) {
     section {
         padding: 50px 20px;
+    }
+    ol li {
+        display: block;
+    }
+
+    ol li:before {
+        margin: auto auto 16px;
     }
 }
