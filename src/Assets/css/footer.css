@@ -66,12 +66,14 @@ footer {
     align-items: center;
 }
 
-.social-media-images a {
+.social-media-image {
     color: #000000;
+    transition: none;
 }
 
-.social-media-images a:hover {
+.social-media-image:hover {
     color: var(--primary);
+    transition: none;
 }
 
 @media screen and (max-width: 768px) {

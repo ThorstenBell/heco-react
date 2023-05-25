@@ -51,7 +51,8 @@ const App: FC = () => {
                 'If you would like to use HecoCost, enter your details below and we’ll be in touch.'
             ],
             image: HecoCost,
-            icon: HecoCostIcon
+            icon: HecoCostIcon,
+            link: "mzbqklna"
         },
         {
             name: 'HecoCalc',
@@ -149,7 +150,7 @@ const App: FC = () => {
                 </p>
 
                 <p>HecoAnalytics provides a unique set of data-driven health evidence services:</p>
-                <ol>
+                <ol className="platform-list">
                     <li>Early evaluation and scoping as a licensed facilitation organisation for the NICE MedTech Early
                         Assessment (META) Tool – building an Evidence Map with PICO analysis.
                     </li>

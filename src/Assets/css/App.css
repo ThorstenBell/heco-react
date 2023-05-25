@@ -6,6 +6,7 @@
     --white-1: #FFFFFF;
     --white-2: #FFF4F4;
     --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --shadow-2: rgba(60,64,67,0.1) 0px 1px 2px 0px,rgba(60,64,67,0.1) 0px 2px 6px 2px;
     --primary-padding: 16px;
     --primary-gradient: linear-gradient(90deg, #FF931E -27%, #EE7D3D 55.81%, #FFBB70 132%);
     --secondary-gradient: linear-gradient(90deg, #FF9C30 -27%, #FFAF58 55.81%, #F38D47 132%);
@@ -70,7 +71,7 @@ h3 {
 
 p {
     font-weight: 400;
-    font-size: clamp(0.8em, 3vw, 1.25em);
+    font-size: clamp(0.8em, 3vw, 1em);
     line-height: 1.5;
     color: #000000;
     margin: 2em 0;
@@ -81,14 +82,14 @@ p a {
 }
 
 ol, ul {
-    padding-left: 0;
+    padding-left: 1em;
 }
 
-ol {
+.platform-list {
     list-style: none;
     counter-reset: item;
 }
-ol li {
+.platform-list li {
     counter-increment: item;
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -96,7 +97,7 @@ ol li {
     margin-bottom: 68px;
 }
 
-ol li:before {
+.platform-list li:before {
     content: counter(item);
     background: white;
     width: 56px;
@@ -108,7 +109,7 @@ ol li:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-2);
 }
 
 label {
@@ -120,6 +121,7 @@ label input {
     border: none;
     border-bottom: 1px solid #000000;
     outline: none;
+    font-size: clamp(0.8em, 3vw, 1em);;
 }
 
 label input:focus {
@@ -170,6 +172,18 @@ label:has(input:invalid) {
 
 .btn-confirm:hover {
     background: var(--primary-accent);
+}
+
+.btn-disabled {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: grey;
+    margin-left: 16px;
 }
 
 .form-error {
@@ -223,7 +237,7 @@ section li {
     font-size: clamp(2em, 5.333vw, 4em);
     color: var(--white-1);
     line-height: 1.5;
-    margin: 0 0 16px;
+    margin: 0 0 30px;
 }
 
 .actions {
@@ -260,11 +274,12 @@ section li {
     section {
         padding: 50px 20px;
     }
-    ol li {
+    .platform-list li {
         display: block;
+        text-align: center;
     }
 
-    ol li:before {
-        margin: auto auto 16px;
+    .platform-list li:before {
+        margin: auto auto 30px;
     }
 }

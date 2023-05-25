@@ -51,7 +51,7 @@
     height: 100px;
     padding: 25px;
     border-radius: 100%;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-2);
 }
 
 .tool-block p {

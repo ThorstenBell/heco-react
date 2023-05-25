@@ -7,15 +7,15 @@
 }
 
 .testimonial-block {
-    min-height: 800px;
+    min-height: 730px;
     padding: 50px 50px 100px;
 
 }
 
 .tag-line {
     color: var(--white-1);
-    font-weight: 500;
-    font-size: 1.25em;
+    font-weight: 100;
+    font-size: 1em;
     line-height: 1;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -29,18 +29,18 @@
 }
 
 #testimonial-text {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 28px;
     line-height: 1.5;
     color: var(--white-1);
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
     padding: 0 32px;
 }
 
 #testimonial-name {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--white-1);
 }
 
@@ -84,14 +84,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    #testimonial-text {
-        font-size: 30px;
-    }
-
-    #testimonial-name {
-        font-size: 20px;
-    }
-
     .quote-mark {
         width: 80px;
         margin: 40px;

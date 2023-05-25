@@ -48,7 +48,7 @@ const Footer = () => {
                         <img src={betterFutures} alt="" width="145" height="70"/>
                         <a href="https://www.linkedin.com/company/hecoanalytics-limited/" target="_blank" rel="noreferrer"
                            title="Follow us on LinkedIn">
-                            <Icon path={mdiLinkedin} size={2}></Icon>
+                            <Icon path={mdiLinkedin} size={2} className="social-media-image"></Icon>
                         </a>
                     </div>
                 </div>
