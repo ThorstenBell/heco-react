@@ -46,6 +46,7 @@
     z-index: 1;
     position: absolute;
     bottom: 16px;
+    cursor: pointer;
 }
 
 #banner button:hover {

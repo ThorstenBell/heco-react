@@ -52,21 +52,21 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                 <h3>4. PROHIBITED USES</h3>
                 <p>4.1 You may only use the site only for lawful purposes. You may not use the site:</p>
                 <ol type="a">
-                    <li>in any way that breaches any applicable local, national or international law or regulation;
+                    <li>In any way that breaches any applicable local, national or international law or regulation;
                     </li>
-                    <li>in any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or
+                    <li>In any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or
                         effect;
                     </li>
-                    <li>for the purpose of harming or attempting to harm any other person in any way;
+                    <li>For the purpose of harming or attempting to harm any other person in any way;
                     </li>
-                    <li>to send, knowingly receive, upload, download, use or re-use any material that is inaccurate,
+                    <li>To send, knowingly receive, upload, download, use or re-use any material that is inaccurate,
                         misleading, obscene, derogatory, or intended to harm any person;
                     </li>
-                    <li>to transmit, or procure the sending of, any unsolicited or unauthorised advertising or
+                    <li>To transmit, or procure the sending of, any unsolicited or unauthorised advertising or
                         promotional
                         material or any other form of similar solicitation; or
                     </li>
-                    <li>to knowingly transmit any data, send or upload any material that contains viruses, Trojan
+                    <li>To knowingly transmit any data, send or upload any material that contains viruses, Trojan
                         horses,
                         worms, time-bombs, keystroke loggers, spyware, adware or any other harmful programs or similar
                         computer
@@ -75,10 +75,10 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                 </ol>
                 <p>4.2 You also agree not to access without authority, interfere with, damage or disrupt:</p>
                 <ol type="a">
-                    <li>any part of the site;</li>
-                    <li>any equipment or network on which the site is stored;</li>
-                    <li>any software used in the provision of the site; or</li>
-                    <li>any equipment or network or software owned or used by any third party.</li>
+                    <li>Any part of the site;</li>
+                    <li>Any equipment or network on which the site is stored;</li>
+                    <li>Any software used in the provision of the site; or</li>
+                    <li>Any equipment or network or software owned or used by any third party.</li>
                 </ol>
                 <h3>5. INTELLECTUAL PROPERTY RIGHTS</h3>
                 <p>5.1 We are the owner or the licensee of all intellectual property rights in the site, and in the
@@ -127,14 +127,14 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                 <p>7.2 Failure to comply with these Terms constitutes a material breach of these Terms and may result in
                     our taking all or any of the following actions:</p>
                 <ol type='a'>
-                    <li>immediate, temporary or permanent withdrawal of your right to use the site;</li>
-                    <li>immediate, temporary or permanent removal of any contribution uploaded by you to the site;</li>
-                    <li>issue of a warning to you;</li>
-                    <li>legal proceedings against you for reimbursement of all costs on an indemnity basis (including,
+                    <li>Immediate, temporary or permanent withdrawal of your right to use the site;</li>
+                    <li>Immediate, temporary or permanent removal of any contribution uploaded by you to the site;</li>
+                    <li>Issue of a warning to you;</li>
+                    <li>Legal proceedings against you for reimbursement of all costs on an indemnity basis (including,
                         but not limited to, reasonable administrative and legal costs) resulting from the breach;
                     </li>
-                    <li>further legal action against you; and/or</li>
-                    <li>disclosure of such information to law enforcement authorities as we reasonably feel is necessary
+                    <li>Further legal action against you; and/or</li>
+                    <li>Disclosure of such information to law enforcement authorities as we reasonably feel is necessary
                         or as required by law.
                     </li>
                 </ol>
@@ -146,22 +146,22 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                     or
                     warranties as to its accuracy. To the extent permitted by law, we expressly exclude:</p>
                 <ol type="a">
-                    <li>all conditions, warranties and other terms which might otherwise be implied by statute, common
+                    <li>All conditions, warranties and other terms which might otherwise be implied by statute, common
                         law or the law of equity; and
                     </li>
-                    <li>any liability for any direct, indirect or consequential loss or damage incurred by any user in
+                    <li>Any liability for any direct, indirect or consequential loss or damage incurred by any user in
                         connection with the site or in connection with the use, inability to use, or results of the use
                         of the site, any websites linked to it and any materials posted on it, including, without
                         limitation any liability for:
                     </li>
                     <ol type='i'>
-                        <li>any loss of profits, sales, business, or revenue;</li>
-                        <li>loss or corruption of data, information or software;</li>
-                        <li>loss of business opportunity;</li>
-                        <li>loss of anticipated savings;</li>
-                        <li>loss of goodwill; or</li>
-                        <li>any indirect or consequential loss</li>
-                        <li>for any other loss or damage of any kind, however arising and whether caused by tort
+                        <li>Any loss of profits, sales, business, or revenue;</li>
+                        <li>Loss or corruption of data, information or software;</li>
+                        <li>Loss of business opportunity;</li>
+                        <li>Loss of anticipated savings;</li>
+                        <li>Loss of goodwill; or</li>
+                        <li>Any indirect or consequential loss</li>
+                        <li>For any other loss or damage of any kind, however arising and whether caused by tort
                             (including negligence), breach of contract or otherwise, even if foreseeable.
                         </li>
                     </ol>
@@ -256,19 +256,19 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                 <p>Personal information is information that can identify an individual or information about an
                     identifiable individual. We may collect personal information such as:</p>
                 <ul>
-                    <li>your contact information - e.g., name, postal address, telephone number, cloud
+                    <li>Your contact information - e.g., name, postal address, telephone number, cloud
                         provider identifiers and email address;
                     </li>
-                    <li>your personal preferences - e.g., default data, language preferences, and marketing
+                    <li>Your personal preferences - e.g., default data, language preferences, and marketing
                         consent.
                     </li>
                 </ul>
                 <p>In addition, we may collect the following types of information:</p>
                 <ul>
-                    <li>we may collect certain data when you visit our Web Sites, such as your IP address, the
+                    <li>We may collect certain data when you visit our Web Sites, such as your IP address, the
                         type of browser you are using or the referring URL; or
                     </li>
-                    <li>we may collect and summarize customer information in an aggregate format for
+                    <li>We may collect and summarize customer information in an aggregate format for
                         internal statistical and research purposes. We may, for example, summarize our data
                         to determine usage of our products and services.
                     </li>
@@ -315,7 +315,7 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                 <p>Please note that even if you unsubscribe from receiving our promotional communications,
                     you may continue to receive certain service or account-related communications from us. Our
                     subscriber list is not sold or rented to other parties.</p>
-                <h4>2.5 Subscription Services and activations</h4>
+                <h4>2.5 Subscription Services and Activations</h4>
                 <p>HecoAnalytics may offer activation of services like health economic or AI data services.
                     These subscription and activations will be recorded for audit purposes.</p>
                 <h3>3.INFORMATION COLLECTED AUTOMATICALLY</h3>
@@ -375,20 +375,20 @@ const PolicyDialog = ({closeDialog, policyType}: Props) => {
                 <p>In addition to the uses described above, HecoAnalytics may use your personal information
                     for a number of different business purposes, for example to:</p>
                 <ul>
-                    <li>detect and protect against fraud and error;</li>
-                    <li>establish and manage your accounts with us;</li>
-                    <li>track and confirm online service usage;</li>
-                    <li>track and analyse your purchases and preferences to better understand your product
+                    <li>Detect and protect against fraud and error;</li>
+                    <li>Establish and manage your accounts with us;</li>
+                    <li>Track and confirm online service usage;</li>
+                    <li>Track and analyse your purchases and preferences to better understand your product
                         and service needs and eligibility;
                     </li>
-                    <li>market and advertise our services;</li>
-                    <li>communicate things like special events, promotions, and surveys;</li>
-                    <li>tailor our online content or in-store offerings to you based on your interactions with us
+                    <li>Market and advertise our services;</li>
+                    <li>Communicate things like special events, promotions, and surveys;</li>
+                    <li>Tailor our online content or in-store offerings to you based on your interactions with us
                         and your preferences;
                     </li>
-                    <li>conduct research and analysis;</li>
-                    <li>operate, evaluate and improve our business; and</li>
-                    <li>for other purposes as described in this Privacy Policy.</li>
+                    <li>Conduct research and analysis;</li>
+                    <li>Operate, evaluate and improve our business; and</li>
+                    <li>For other purposes as described in this Privacy Policy.</li>
                 </ul>
                 <h3>5.WHEN IS YOUR INFORMATION REMOVED</h3>
                 <p>We keep your information only as long as we need it for legitimate business purposes and to

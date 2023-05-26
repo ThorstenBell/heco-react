@@ -90,6 +90,7 @@ ol, ul {
     counter-reset: item;
 }
 .platform-list li {
+    font-size: clamp(0.8em, 3vw, 1em);
     counter-increment: item;
     display: grid;
     grid-template-columns: 100px 1fr;
