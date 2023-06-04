@@ -24,14 +24,14 @@ const Footer = () => {
                         <button onClick={() => {
                             setPolicyType('privacy')
                             setOpenPrivacyPolicy(true)
-                        }} type="button">Privacy policy
+                        }} type="button">Privacy Policy
                         </button>
                     </li>
                     <li>
                         <button onClick={() => {
                             setPolicyType('terms')
                             setOpenPrivacyPolicy(true)
-                        }} type="button">Terms of use
+                        }} type="button">Terms of Use
                         </button>
                     </li>
                     <li>Company Number: 09795243</li>

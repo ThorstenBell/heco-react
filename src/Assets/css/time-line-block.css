@@ -54,10 +54,14 @@
     box-shadow: var(--shadow-2);
 }
 
+.tool-block h3 {
+    margin: 1em 0 8px;
+}
+
 .tool-block p {
     max-width: 200px;
     text-align: center;
-    margin: 0 0 16px;
+    margin: 0 0 8px;
 }
 
 .open-dialog, .coming-soon {

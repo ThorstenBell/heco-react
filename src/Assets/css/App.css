@@ -96,6 +96,7 @@ ol, ul {
     grid-template-columns: 100px 1fr;
     gap: 24px;
     margin-bottom: 68px;
+    align-items: center;
 }
 
 .platform-list li:before {
